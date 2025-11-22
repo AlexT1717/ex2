@@ -48,10 +48,10 @@ int main()
             // TASK 2: The Memory Game
             case 2:
                 int numberOfDucks = -1; //To enter the loop and to handle the validation for negative numbers
-                while (numberOfDucks < 0) {
+                while (numberOfDucks <= 0) {
                     printf("please enter the number of ducks:\n");
                     scanf("%d", &numberOfDucks);
-                    if (numberOfDucks < 0) {
+                    if (numberOfDucks <= 0) {
                         printf("Invalid number, please try again\n");
                     } else {
                         printf("you entered %d ducks\n", numberOfDucks);
