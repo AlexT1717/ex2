@@ -151,10 +151,11 @@ int main()
             // TASK 5: The Mystery of the Repeated Digits
             case 5:
                 int longNumber = -1; //For validation and to handle the number
-                while (longNumber < 0) {
+                int finishFlag = 0; //Flag for finish cuse the number is 0 also
+                while (finishFlag == 0) {
                     printf("please enter number\n");
                     scanf("%d", &longNumber);
-                    if (longNumber < 0) {
+                    if (longNumber <= 0) {
                         printf("Invalid number, please try again\n");
                     } else {
                         while (longNumber != 0) {
@@ -173,6 +174,7 @@ int main()
                             if (count > 0) {
                                 printf("%d appears more than once!\n", cheakNumber);
                             }
+                            finishFlag = 1;
                         }
                     }
                 }
