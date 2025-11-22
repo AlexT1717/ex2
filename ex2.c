@@ -14,7 +14,7 @@ int main()
         printf("Welcome to our games, please choose an option:\n");
         printf("1. Ducky's Unity Game\n");
         printf("2. The Memory Game\n");
-        printf("3. Professor Pat's Power Calculation Game\n");
+        printf("3. Professor Pat's Power Calculation\n");
         printf("4. The Duck Parade\n");
         printf("5. The Mystery of the Repeated Digits\n");
         printf("6. Good Night Ducks\n");
@@ -62,7 +62,7 @@ int main()
                             int soundFlag = 0;
                             //Validation of the QUAK input
                             while (soundFlag == 0) {
-                                printf("duck %d do QUAK? 1 for yes, 0 for no:\n", (i+1));
+                                printf("duck %d do QUAK? 1 for yes, 0 for no\n", (i+1));
                                 scanf("%d", &sound);
                                 if (sound != 0 && sound != 1) {
                                     printf("Invalid number, please try again\n");
@@ -117,7 +117,7 @@ int main()
             case 4:
                 int drawDucks = -1; //For validation and to handle the number of the ducks to draw
                 while (drawDucks < 0) {
-                    printf("please Enter number of ducks:\n");
+                    printf("please enter number of ducks:\n");
                     scanf("%d", &drawDucks);
                     if (drawDucks < 0) {
                         printf("Invalid number, please try again\n");
