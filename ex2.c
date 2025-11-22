@@ -24,8 +24,8 @@ int main()
             // TASK 1: Ducky's Unity Game
             case 1:
                 int firstGameFlag = 0; //For validation of the positive number
+                printf("please enter a positive number:\n");
                 while (firstGameFlag == 0) {
-                    printf("please enter a positive number:\n");
                     int positiveNumber = 0;
                     scanf("%d", &positiveNumber);
                     if (positiveNumber < 0) {
@@ -48,8 +48,8 @@ int main()
             // TASK 2: The Memory Game
             case 2:
                 int numberOfDucks = -1; //To enter the loop and to handle the validation for negative numbers
+                printf("please enter the number of ducks:\n");
                 while (numberOfDucks <= 0) {
-                    printf("please enter the number of ducks:\n");
                     scanf("%d", &numberOfDucks);
                     if (numberOfDucks <= 0) {
                         printf("Invalid number, please try again\n");
@@ -91,14 +91,14 @@ int main()
             case 3:
                 //-1 to enter the loop first and for validation of positive number input
                 int number = -1, exponent = -1, result = 0;
+                printf("please enter the number\n");
                 while (number < 0) {
-                    printf("please enter the number\n");
                     scanf("%d", &number);
                     if (number < 0) {
                         printf("Invalid number, please try again\n");
                     } else {
+                        printf("please enter the exponent\n");
                         while (exponent < 0) {
-                            printf("please enter the exponent\n");
                             scanf("%d", &exponent);
                             if (exponent < 0) {
                                 printf("Invalid number, please try again\n");
@@ -117,8 +117,8 @@ int main()
             // TASK 4: The Duck Parade
             case 4:
                 int drawDucks = -1; //For validation and to handle the number of the ducks to draw
+                printf("please enter number of ducks:\n");
                 while (drawDucks < 0) {
-                    printf("please enter number of ducks:\n");
                     scanf("%d", &drawDucks);
                     if (drawDucks < 0) {
                         printf("Invalid number, please try again\n");
@@ -152,8 +152,8 @@ int main()
             case 5:
                 int longNumber = -1; //For validation and to handle the number
                 int finishFlag = 0; //Flag for finish cuse the number is 0 also
+                printf("please enter number\n");
                 while (finishFlag == 0) {
-                    printf("please enter number\n");
                     scanf("%d", &longNumber);
                     if (longNumber <= 0) {
                         printf("Invalid number, please try again\n");
