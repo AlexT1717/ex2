@@ -54,6 +54,7 @@ int main()
                     if (numberOfDucks < 0) {
                         printf("Invalid number, please try again\n");
                     } else {
+                        printf("you entered %d ducks\n", numberOfDucks);
                         //unsigned long long cuse its handle up to 64 bits
                         unsigned long long ducksSounds = 0;
                         //Loop to take all the inputs for QUAK for every duck
