@@ -27,7 +27,7 @@ int main()
             case 1: {
                     //For validation of the positive number
                     int isFirstGameActive = 0;
-                    int maxIntBits = sizeof(int) * 8;
+                    const int MAX_INT_BITS = sizeof(int) * 8;
                     printf("please enter a positive number:\n");
                     while (isFirstGameActive == 0) {
                         int positiveNumber = 0;
@@ -38,7 +38,7 @@ int main()
                             //Counter for the 1's in the binary format of the number
                             int count = 0;
                             //Assume int is 32 bits go through all the bits and count the 1's
-                            for (int i = 0; i < maxIntBits; i++) {
+                            for (int i = 0; i < MAX_INT_BITS; i++) {
                                 int isLeftBitOdd = positiveNumber & 1;
                                 if (isLeftBitOdd == 1) {
                                     count++;
@@ -56,7 +56,7 @@ int main()
             // TASK 2: The Memory Game
             case 2: {
                     //To enter the loop and to handle the validation for negative numbers
-                    int numberOfDucks = -1;
+                    int numberOfDucks = 0;
                     printf("please enter the number of ducks:\n");
                     while (numberOfDucks <= 0) {
                         scanf("%d", &numberOfDucks);
@@ -134,7 +134,7 @@ int main()
             case 4: {
                     //For validation and to handle the number of the ducks to draw
                     int drawDucks = -1;
-                    int maxDucksInOneLine = 10;
+                    const int MAX_DUCKS_IN_ONE_LINE = 10;
                     printf("please enter number of ducks:\n");
                     while (drawDucks < 0) {
                         scanf("%d", &drawDucks);
@@ -145,10 +145,10 @@ int main()
                             int drawDucksToPrint = 0;
                             while (drawDucks > 0) {
                                 //Max ducks in 1 line
-                                if (drawDucks > maxDucksInOneLine) {
-                                    drawDucksToPrint = maxDucksInOneLine;
+                                if (drawDucks > MAX_DUCKS_IN_ONE_LINE) {
+                                    drawDucksToPrint = MAX_DUCKS_IN_ONE_LINE;
                                     //New number of the ducks after the line
-                                    drawDucks = drawDucks - maxDucksInOneLine;
+                                    drawDucks = drawDucks - MAX_DUCKS_IN_ONE_LINE;
                                 } else {
                                     //Last line print
                                     drawDucksToPrint = drawDucks;
